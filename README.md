@@ -2,7 +2,7 @@
 
 ## Introduction
 
-`hostdev` is a [device plugin](https://github.com/kubernetes/community/blob/master/contributors/design-proposals/resource-management/device-plugin.md) for Kubernetes to configure devices under host /dev into PODs through [device cgroup](https://www.kernel.org/doc/Documentation/cgroup-v1/devices.txt).
+`k8s-hostdev-plugin` is a [device plugin](https://github.com/kubernetes/community/blob/master/contributors/design-proposals/resource-management/device-plugin.md) for Kubernetes to configure devices under host /dev into PODs through [device cgroup](https://www.kernel.org/doc/Documentation/cgroup-v1/devices.txt).
 
 The hostdev binary should be runing on each node and talk with kubelet vai unix sockets under '/var/lib/kubelet/device-plugins/'. This could be achieved by a daemonset which will be explained later.
 
