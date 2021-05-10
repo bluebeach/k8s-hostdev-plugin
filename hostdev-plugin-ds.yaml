@@ -1,9 +1,12 @@
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: DaemonSet
 metadata:
   name: hostdev-device-plugin
   namespace: kube-system
 spec:
+  selector:
+    matchLabels:
+      name: hostdev-device-plugin-ds
   template:
     metadata:
       annotations:
